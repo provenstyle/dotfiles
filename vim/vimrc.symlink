@@ -28,7 +28,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'mattn/gist-vim'
 Plug 'epmatsw/ag.vim'
 Plug 'tpope/vim-commentary'
-Plug 'tejr/vim-tmux'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-rbenv'
 Plug 'gem.vim'
@@ -64,7 +63,7 @@ set t_Co=256
 " General Config
 " ==============
 
-let mapleader='\'
+let mapleader="\<space>"
 set gfn=Menlo:h14
 set encoding=utf-8
 set number                      " Line numbers are good
@@ -81,7 +80,10 @@ set splitright                  " Opens vertical split right of current window
 set splitbelow                  " Opens horizontal split below current window
 "set shortmess=filnxtToOI       " see :help shortmess
                                 " http://items.sjbach.com/319/configuring-vim-right
+"Key Mappings
+" ==========
 
+nnoremap <leader>q :bp<cr>:bd #<cr>
 
 " Mouse
 " ======
